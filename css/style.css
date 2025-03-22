@@ -51,7 +51,7 @@ body{
     letter-spacing: 0.28px;
 }
 
-.contact-list{
+.contact-link{
     color: var(--decr-color);
 font-size: 14px;
 font-weight: 500;
@@ -59,7 +59,7 @@ line-height: 1.14l;
 letter-spacing: 0.28px;
 }
 
-.contact-list:hover{
+.contact-link:hover{
     color: var(--hover-color);
     font-size: 14px;
     font-weight: 500;
@@ -173,12 +173,12 @@ letter-spacing: 0.78px;
 
 .footer-span{
     color: var(--main-color);
-font-family: Raleway;
-font-style: normal;
-font-size: 26px;
-font-weight: 700;
-line-height: 1.38;
-letter-spacing: 0.78px;
+    font-family: Raleway;
+    font-style: normal;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
 }
 
 .footer-map{
@@ -198,3 +198,44 @@ letter-spacing: 0.78px;
     line-height: 1.71; /* 171.429% */
     letter-spacing: 0.42px;
 }
+
+
+.filter-btn{
+    color: var(--text-color);
+    background-color: var(--team-bg-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62; /* 162.5% */
+    letter-spacing: 0.48px;
+    border: none;
+}
+
+.filter-btn:focus{
+    color: var(--main-color);
+    background-color: var(--hover-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62; /* 162.5% */
+    letter-spacing: 0.48px;
+    border: none;
+}
+
+.portfolio-caption{
+    color: var(--text-color);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2; /* 200% */
+    letter-spacing: 1.08px;
+}
+
+.portfolio-description{
+    color: var(--descr-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.87; /* 187.5% */
+    letter-spacing: 0.48px;
+}
+
