@@ -14,9 +14,19 @@
 body{
     font-family: Roboto;
 }
+.container{
+    outline: solid red;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 
 /* header */
 
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 .header-logo{
     color: var(--hover-color);
     font-family: Raleway;
@@ -71,6 +81,7 @@ body{
 
 .hero{
     background-color: var(--main-bg-color);
+    padding: 200px 0;
 }
 
 .hero-title{
@@ -97,6 +108,10 @@ body{
 
 
 /* section meet */
+.meet{
+    padding: 94px 0;
+}
+
 .meet-caption{
     color: var(--text-color);
     font-size: 14px;
@@ -117,7 +132,9 @@ body{
 }
 
 /* section about */
-
+.about{
+    padding-bottom: 94px;
+}
 .about-title{
     color: var(--text-color);
     text-align: center;
@@ -129,6 +146,7 @@ body{
 
 /* section team */
 .team{
+    padding: 94px 0;
     background-color: var(--team-bg-color);
 }
 .team-title{
@@ -163,6 +181,10 @@ letter-spacing: 0.48px;
 footer{
     background-color: var(--main-bg-color);
 }
+.footer{
+    padding: 60px 0;
+}
+
 .footer-logo{
     color: var(--hover-color);
 font-family: Raleway;
@@ -201,7 +223,11 @@ letter-spacing: 0.78px;
     letter-spacing: 0.42px;
 }
 
-
+/* filter */
+.filter{
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
 .filter-btn{
     color: var(--text-color);
     background-color: var(--team-bg-color);
@@ -223,7 +249,10 @@ letter-spacing: 0.78px;
     letter-spacing: 0.48px;
     border: none;
 }
-
+/* portfolio */
+.portfolio{
+    padding-bottom: 94px;
+}
 .portfolio-caption{
     color: var(--text-color);
     font-family: Roboto;
