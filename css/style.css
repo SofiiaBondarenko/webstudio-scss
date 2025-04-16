@@ -146,6 +146,9 @@ body{
     padding: 94px 0;
 }
 
+.meet-item{
+    width: 270px
+}
 .meet-list{
     display: flex;
     gap: 30px;
