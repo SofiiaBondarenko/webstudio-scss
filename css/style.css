@@ -98,6 +98,7 @@ body{
 .hero{
     background-color: var(--main-bg-color);
     padding: 200px 0;
+    background-image: url(../imgs/11314362dd953143a8a4d9f86ec8d71afc0e8103.jpg);
 }
 
 .hero-box{
@@ -151,8 +152,6 @@ body{
     background: var(--team-bg-color);
     display: block;
     margin-bottom: 30px;
-}
-.meet-item:nth-child(1)::before {
     background-image: url(../imgs/antenna.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -160,20 +159,13 @@ body{
 
 .meet-item:nth-child(2)::before {
     background-image: url(../imgs/clock.png);
-    background-repeat: no-repeat;
-    background-position: center;
 }
-
 .meet-item:nth-child(3)::before {
     background-image: url(../imgs/diagram.png);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .meet-item:nth-child(4)::before {
     background-image: url(../imgs/astronaut.png);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .meet-item{
     width: 270px
