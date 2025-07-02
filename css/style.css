@@ -7,6 +7,7 @@
     --main-bg-color: #2F303A;
     --logo-color: #000000;
     --details-color:#ECECEC;
+    --icon-color: #AFB1B8;
     --transparent-details: rgba(255, 255, 255, 0.60);
 }
  
@@ -63,6 +64,13 @@ body{
     letter-spacing: 0.28px;
 }
 
+ .header-icon{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+ }
+
+
 .nav-link:hover{
     color: var(--hover-color);
     font-size: 14px;
@@ -78,6 +86,7 @@ body{
     letter-spacing: 0.28px;
 }
 
+
 .header-contact{
     display: flex;
     gap: 50px;
@@ -89,6 +98,8 @@ body{
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+    display: flex;
+    align-items: center;
 }
 
 .contact-link:hover{
@@ -97,6 +108,7 @@ body{
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+    fill: var(--hover-color);
 }
 
 /* hero */
@@ -239,7 +251,11 @@ body{
     letter-spacing: 1.08px;
     margin-bottom: 50px;
 }
-
+.team-icon{
+    width: 20px;
+    height: 20px;
+    fill: var(--icon-color);
+}
 .team-list{
     display: flex;
     gap:30px;
@@ -276,10 +292,92 @@ body{
     margin-top: 10px;
 }
 
+.team-iconslist{
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+    justify-content: center;
+  }
+  
+.team-iconlink{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.team-iconlink:hover{
+    background-color: var(--hover-color);
+   .team-icon{
+    fill: var(--main-color);
+   }
+}
+  
+.team-icon{
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color);
+}
 
+/* clients */
+.clients-box{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.clients-title{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+.clients-item{
+    .clients-icon{
+        fill: var(--icon-color);
+    }
+    width: 170px;
+    height: 92px;
+    align-content: center;
+    justify-content: center;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: 1px solid var(--icon-color) ;
+}
+
+.clients-item:hover{
+    .clients-icon{
+        fill: var(--hover-color);
+    }
+    width: 170px;
+    height: 92px;
+    align-content: center;
+    justify-content: center;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: 1px solid var(--hover-color);
+}
+
+.clients-list{
+    display: flex;
+    gap: 30px;
+}
+
+
+.clients-icon{
+    fill: var(--logo-color);
+    height: 60px;
+    width: 106px;
+}
 /* footer */
 footer{
     background-color: var(--main-bg-color);
+}
+.footer-box{
+    display: flex;
 }
 .footer{
     padding: 60px 0;
@@ -328,6 +426,47 @@ footer{
 
 .footer-item{
     margin-top: 9px;
+}
+
+.footer-icontitle{
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+.footer-icons{
+    margin-left: 75px;
+}
+.footer-iconslist{
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+    justify-content: center;
+  }
+  
+.footer-iconlink{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.10);;
+}
+  
+.footer-iconlink:hover{
+    background-color: var(--hover-color);
+   .team-icon{
+    fill: var(--main-color);
+   }
+}
+  
+.footer-icon{
+  width: 20px;
+  height: 20px;
+  fill: var(--main-color);
 }
 /* filter */
 .filter{
