@@ -746,9 +746,15 @@ footer{
     text-decoration:underline;
 }
 
-.modal-input:focus{
+.modal-input:hover,.modal-input:focus{
     outline: 1px solid var(--hover-color);
 }
+
+.modal-input:hover + .modal-icon,
+.modal-input:focus + .modal-icon{
+    fill: var(--hover-color);
+}
+
 .modal-comment:focus{
     outline: 1px solid var(--hover-color);
 }
