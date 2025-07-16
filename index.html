@@ -299,7 +299,7 @@
                 <h3 class="subscr-title">Підпишіться на розсилку</h3>
                 <form class="subscr-form" action="">
                     <label class="subscr-lable" for="">
-                        <input class="subscr-input" type="email" placeholder="E-mail" />
+                        <input required class="subscr-input" type="email" placeholder="E-mail" />
                     </label>
                     <button class="subcr-btn" type="submit">
                         Підписатися
@@ -317,14 +317,14 @@
                 <use href="./imgs/symbol-defs.svg#icon-close"></use>
             </svg></button>
             <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
-            <form action="">
+            <form class="modal-form" action="">
                 <label class="modal-lable" for="">
                     Ім'я
                     <div class="input-box">
                         <svg class="modal-icon">
                           <use href="./imgs/symbol-defs.svg#icon-person"></use>
                         </svg>
-                        <input class="modal-input" type="text" />
+                        <input required class="modal-input" type="text" />
                       </div>
                 </label>
                 <label class="modal-lable" for="">
@@ -333,7 +333,7 @@
                         <svg class="modal-icon">
                           <use href="./imgs/symbol-defs.svg#icon-phone"></use>
                         </svg>
-                        <input class="modal-input" type="text" />
+                        <input required class="modal-input" type="tel" />
                       </div>
                 </label>
                 <label class="modal-lable" for="">
@@ -342,7 +342,7 @@
                         <svg class="modal-icon">
                           <use href="./imgs/symbol-defs.svg#icon-email"></use>
                         </svg>
-                        <input class="modal-input" type="text" />
+                        <input required class="modal-input" type="email" />
                       </div>
                 </label>
                 <label class="modal-lable" for="">
@@ -350,9 +350,10 @@
                     <textarea class="modal-comment" placeholder="Введіть текст"></textarea>
                 </label>
                  <label for="" class="modal-lable-checkbox">
-                    <input class="modal-input-checkbox" type="checkbox" name="" id="">
+                    <input required class="modal-input-checkbox" type="checkbox" name="" id="">
                     Погоджуюся з розсилкою та приймаю <a class="modal-link" href="">Умови договору</a> 
                 </label>
+                <button class="modal-btn" type="submit">Відправити</button>
             </form>
         </div>
     </div>
