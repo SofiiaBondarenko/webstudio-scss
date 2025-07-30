@@ -718,6 +718,9 @@ footer{
     fill: var(--logo-color);
     width: 30px;
     height: 30px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon{
@@ -727,6 +730,9 @@ footer{
     top: 11px;
     left: 12px;
     fill: var(--text-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
 }
 .modal-close:hover, .modal-close:focus{
     .modal-icon-close{
@@ -783,6 +789,9 @@ footer{
     outline: 1px solid rgba(33, 33, 33, 0.20);
     border: none;
     margin-bottom: 10px;
+    transition-property: outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-link{
@@ -821,7 +830,6 @@ footer{
 .modal-btn{
     border-radius: 4px;
     background: #188CE8;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: var(--main-color);
     text-align: center;
     font-size: 16px;
@@ -834,4 +842,11 @@ footer{
     margin-right: auto;
     cursor: pointer;
     display: block;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
