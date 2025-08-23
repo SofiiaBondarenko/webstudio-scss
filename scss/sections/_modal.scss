@@ -10,10 +10,20 @@
     pointer-events: auto;
 }
 
+.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+
+    .modal{
+        transform: translate(-50%, -1000px);
+    }
+}
+
+
 .modal{
     padding: 40px;
     width: 528px;
-    background-color: var(--main-color);
+    background-color: $main-color;
     border-radius: 4px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
     transform: translate(-50%, -50%);
@@ -23,156 +33,159 @@
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-close{
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    border: none;
-    outline: 1px solid var(--icon-color);
-    border-radius: 50%;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    &__close{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        outline: 1px solid $icon-color;
+        border-radius: 50%;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-.modal-icon-close{
-    fill: var(--logo-color);
-    width: 30px;
-    height: 30px;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-icon{
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    top: 11px;
-    left: 12px;
-    fill: var(--text-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: fill;
-}
-.modal-close:hover, .modal-close:focus{
-    .modal-icon-close{
-        fill: var(--hover-color);
+        &:hover, &:focus{
+            .modal__iconclose{
+                fill: $hover-color;
+            }
+        }
     }
-}
-.input-box {
-    position: relative;
-  }
-.is-hidden{
-    opacity: 0;
-    pointer-events: none;
+
+    &iconclose{
+        fill: $logo-color;
+        width: 30px;
+        height: 30px;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &__title{
+        color: $text-color;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: 0.6px;
+        margin-bottom: 12px;
+    }
+
+    &__lable{
+        color: $descr-color;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.16;
+        letter-spacing: 0.12px;
+    }
+
+    &__inputbox {
+        position: relative;
+    }
+    
+    &__input{
+        padding-left: 42px;
+        display: block;
+        margin-top: 4px;
+        width: 100%;
+        height: 40px;
+        border-radius: 4px;
+        outline: 1px solid rgba(33, 33, 33, 0.20);
+        border: none;
+        margin-bottom: 10px;
+        transition-property: outline;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,&:focus{
+            outline: 1px solid $hover-color;
+        }
+    }
+
+    &__icon{
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        top: 11px;
+        left: 12px;
+        fill: $text-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: fill;
+    }
+
+    &__comment{
+        padding: 12px 16px;
+        resize: none;
+        margin-top: 4px;
+        display: block;
+        width: 100%;
+        height: 120px;
+        border-radius: 4px;
+        outline: 1px solid rgba(33, 33, 33, 0.20);
+        border: none;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.16;
+        letter-spacing: 0.12px;
+
+        &:focus{
+            outline: 1px solid $hover-color;
+        }
+    }
+
+    &__lablecheckbox{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: $descr-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.71; /* 171.429% */
+        letter-spacing: 0.42px;
+    }
+
+    &__link{
+        color: $hover-color;
+        text-decoration:underline;
+    }
+
+    &__btn{
+        border-radius: 4px;
+        background: #188CE8;
+        color: $main-color;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.87; /* 187.5% */
+        letter-spacing: 0.96px;
+        padding: 10px 52px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+        display: block;
+        transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover{
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        }
+    }
+    
+
 }
 
-.is-hidden .modal{
-    transform: translate(-50%, -1000px);
+.modal__input:hover + .modal__icon,
+.modal__input:focus + .modal__icon{
+    fill: $hover-color;
 }
 
-.modal-title{
-    color: var(--text-color);
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: 0.6px;
-    margin-bottom: 12px;
-}
 
-.modal-lable{
-    color: var(--descr-color);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.16;
-    letter-spacing: 0.12px;
-}
-.modal-lable-checkbox{
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--descr-color);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71; /* 171.429% */
-    letter-spacing: 0.42px;
-}
-.modal-input{
-    padding-left: 42px;
-    display: block;
-    margin-top: 4px;
-    width: 100%;
-    height: 40px;
-    border-radius: 4px;
-    outline: 1px solid rgba(33, 33, 33, 0.20);
-    border: none;
-    margin-bottom: 10px;
-    transition-property: outline;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-link{
-    color: var(--hover-color);
-    text-decoration:underline;
-}
 
-.modal-input:hover,.modal-input:focus{
-    outline: 1px solid var(--hover-color);
-}
-
-.modal-input:hover + .modal-icon,
-.modal-input:focus + .modal-icon{
-    fill: var(--hover-color);
-}
-
-.modal-comment:focus{
-    outline: 1px solid var(--hover-color);
-}
-.modal-comment{
-    padding: 12px 16px;
-    resize: none;
-    margin-top: 4px;
-    display: block;
-    width: 100%;
-    height: 120px;
-    border-radius: 4px;
-    outline: 1px solid rgba(33, 33, 33, 0.20);
-    border: none;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.16;
-    letter-spacing: 0.12px;
-}
-
-.modal-btn{
-    border-radius: 4px;
-    background: #188CE8;
-    color: var(--main-color);
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.87; /* 187.5% */
-    letter-spacing: 0.96px;
-    padding: 10px 52px;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-    display: block;
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-btn:hover{
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
