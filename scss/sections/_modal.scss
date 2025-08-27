@@ -44,9 +44,10 @@
         outline: 1px solid $icon-color;
         border-radius: 50%;
         background-color: transparent;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexbox($wrap:nowrap);
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
 
         &:hover, &:focus{
             .modal__iconclose{

@@ -2,9 +2,10 @@
     padding-bottom: 94px;
 
     &__list{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
+        @include flexbox ($gap:30px);
+        // display: flex;
+        // flex-wrap: wrap;
+        // gap: 30px;
     }
 
     &__item{

@@ -49,10 +49,11 @@
     }
     
     &__iconslist{
-        display: flex;
-        gap: 10px;
+        @include flexbox($gap:10px);
+        // display: flex;
+        // gap: 10px;
+        // justify-content: center;
         margin-top: 16px;
-        justify-content: center;
     }
 
     &__iconlink{

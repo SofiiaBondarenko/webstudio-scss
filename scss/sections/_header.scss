@@ -90,14 +90,16 @@
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
 
-    &__link:hover{
-        color: $hover-color;
-        .contact__icon{
-            fill: $hover-color;
+        &:hover{
+            color: $hover-color;
+            .contact__icon{
+                fill: $hover-color;
+            }
         }
     }
+
+   
 
     &__icon{
         width: 15px;
