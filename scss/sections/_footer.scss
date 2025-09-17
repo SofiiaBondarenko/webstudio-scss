@@ -4,27 +4,38 @@
 
     &__box{
         display: flex;
-        align-items: baseline;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 60px;
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            align-items: baseline;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 0;
+        }
+        @media screen and (min-width: 1200px) {
+            text-align: start;
+        }
     }
 
     &__logo{
         color: $main-color;
         font-family: Raleway;
-        font-size: 26px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 700;
         line-height: 1.38;
         letter-spacing: 0.78px;
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
+        }
     }
     
     &__span{
         color: $hover-color;
-        font-family: Raleway;
-        font-style: normal;
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 1.38;
-        letter-spacing: 0.78px;
+
     }
     
     &__address{
@@ -54,7 +65,9 @@
     }
 
     &__icons{
-        margin-left: 75px;
+        @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+        }
     }
 
     &__icontitle{
@@ -98,7 +111,13 @@
     }
 
     &__subscr{
-        margin-left: auto;
+        @media screen and (min-width: 768px) {
+            margin-top: 60px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-top: 0;
+            margin-left: auto;
+        }
     }
 
     &__title{
@@ -113,17 +132,30 @@
 
     &__form{
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        @media screen and (min-width: 1200px){
+            flex-direction: row;
+            gap: 0;
+        }
     }
     
     &__input{
         padding-left: 16px;
         display: block;
-        width: 358px;
+        width: 290px;
         height: 50px;
         border-radius: 4px;
         outline: 1px solid rgba(255, 255, 255, 0.30);    ;
         border: none;
         background-color: $main-bg-color;
+        @media screen and (min-width: 480px){
+            width: 450px;
+        }
+        @media screen and (min-width: 1200px){
+            width: 358px;
+        }
     }
     
     &__btn {
