@@ -1,30 +1,31 @@
 .hero{
-    padding: 200px 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imgs/bgmain.jpg);
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../imgs/bgmain.jpg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+    overflow: hidden;
 
-    &__box{
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        @include flexbox ($direction:column)
+    @media screen and (min-width: 1200px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
     }
 
     &__title{
-        width: 696px;
-        display: flex;
-        flex-wrap: wrap;
-        color: $main-color;
+        color: $title-color;
         text-align: center;
-        font-size: 44px;
+        font-size: 26px;
         font-weight: 900;
-        line-height: 1.36; /* 136.364% */
-        letter-spacing: 2.64px;
-        text-transform: uppercase;
-        margin-bottom: 30px;
+        line-height: 1.36;
+        letter-spacing: 1.56px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 30px;
+        animation-name: title-move;
+        animation-duration: 2000ms;
     }
 
     &__btn{
@@ -44,8 +45,3 @@
         cursor: pointer;
     }    
 }
-
-
-
-
-

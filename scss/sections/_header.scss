@@ -1,8 +1,12 @@
 .header{
-    padding-top: 24px;
-    padding-bottom: 25px;
     border-bottom: 1px solid $details-color ;
-
+    padding: 10px 0;
+    @media screen and (min-width: 768px) {
+        padding: 21px 0;
+    }
+    @media screen and (min-width:1200px){
+        padding: 25px 0;
+    }
     &__box{
         display: flex;
         align-items: center;
@@ -11,11 +15,19 @@
     &__logo{
         color: $hover-color;
         font-family: Raleway;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 700;
         line-height: 1.38;
-        letter-spacing: 0.78px;
-        margin-right: 93px;
+        letter-spacing: 0.72px;
+        margin-right: auto;
+        @media screen and (min-width:768px) {
+            margin-right: 88px;
+          }
+        @media screen and (min-width:1200px) {
+            font-size: 26px;
+            letter-spacing: 0.78px;
+            margin-right: 93px;
+          }
     }
 
     &__span{
@@ -75,10 +87,19 @@
 
 
 .contact{
-    display: flex;
-    gap: 50px;
+    display: none;
     margin-left: auto;
 
+    @media screen and (min-width:768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    @media screen and (min-width:1200px) {
+      flex-direction: row;
+          gap: 30px;
+    }
     &__link{
         color: $descr-color;
         font-size: 14px;
