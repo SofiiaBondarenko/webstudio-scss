@@ -22,7 +22,7 @@
 
 .modal{
     padding: 40px;
-    width: 528px;
+    width: 450px;
     background-color: $main-color;
     border-radius: 4px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
@@ -70,7 +70,7 @@
         text-align: center;
         font-size: 20px;
         font-weight: 700;
-        line-height: 1.15;
+        line-height: 1.50;
         letter-spacing: 0.6px;
         margin-bottom: 12px;
     }
@@ -153,8 +153,13 @@
     &__link{
         color: $hover-color;
         text-decoration:underline;
+        font-size: 12px;
     }
 
+    &__agree{
+        font-size: 12px;
+    }
+    
     &__btn{
         border-radius: 4px;
         background: #188CE8;
