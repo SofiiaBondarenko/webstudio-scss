@@ -14,6 +14,11 @@
     <header class="header">
         <div class="container header__box">
             <a class="header__logo" href="../index.html">Web<span class="header__span">Studio</span></a>
+            <button type="button" class="header__btn" data-mobile-open>
+                <svg class="header__menu">
+                    <use href="../imgs/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
             <nav class="header__nav">
                 <ul class="nav">
                     <li class="nav__item">
@@ -39,6 +44,26 @@
                     </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+            <div class="mobile is-hidden" data-mobile>
+                <button type="button" class="mobile__close" data-mobile-close><svg class="mobile__icon">
+                        <use href="../imgs/symbol-defs.svg#icon-close"></use>
+                    </svg></button>
+                <ul class="mobile__list">
+                    <li class="mobile__item"><a href="./index.html" class="mobile__link">Студія</a></li>
+                    <li class="mobile__item"><a href="./pages/portfolio.html" class="mobile__link">Портфоліо</a></li>
+                    <li class="mobile__item"><a href="" class="mobile__link">Контакти</a></li>
+                </ul>
+                <ul class="mobile__contacts">
+                    <li class="mobile__itm"><a href="tel:+380961111111" class="mobile__contact">+38 096 111 11 11</a></li>
+                    <li class="mobile__itm"><a href="mailto:info@devstudio.com" class="mobile__contact">info@devstudio.com</a></li>
+                </ul>
+                <ul class="mobile__media">
+                    <li class="mobile__elm"><a href="" class="mobile__social">Instagram</a></li>
+                    <li class="mobile__elm"><a href="" class="mobile__social">twitter</a></li>
+                    <li class="mobile__elm"><a href="" class="mobile__social">facebook</a></li>
+                    <li class="mobile__elm"><a href="" class="mobile__social">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -209,4 +234,5 @@
         </div>
     </footer>
 </body>
+<script src="../js/menu.js" type="module"></script>
 </html>
